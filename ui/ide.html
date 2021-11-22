@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CODE GEEKS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    
+
+  </head>
+  <body>
+      <div class="container reveal">
+        <div style="background-image: url('back: 1png;');">
+    <input type="checkbox" id="check">
+    
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3>CODE <span>GEEKS</span></h3>
+      </div>
+    
+      <div class="right_area" style="color: #19B3D3 ;" style="float: right;">
+
+         Select Language:
+ 
+         &nbsp; &nbsp;
+ 
+         <select id="languages" class="languages" onchange="changeLanguage()">
+ 
+             <option value="c"> C </option>
+ 
+             <option value="cpp"> C++ </option>
+ 
+             <option value="python"> Python </option>
+ 
+             <option value="php">php</option>
+ 
+         </select>
+ 
+     </div>
+ 
+    </header>
+    <div class="sidebar">
+      <center>
+        <img src="logos/Rornoa.jpeg" class="profile_image" alt="">
+        <h4>Himanshu</h4>
+      </center>
+      <a href="../ui/buttonshtml/dashboard.html" target="_blank"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+      <a href="../ui/buttonshtml/group_pro2.html"target="_blank"><i class="fa fa-graduation-cap"></i><span>Learn</span></a>
+      <a href="../ui/buttonshtml/Ranking.html" target="_blank"><i class="fa fa-trophy"></i><span>Rank</span></a>
+      <a href="../ui/buttonshtml/index.html"><i class="fas fa-th" target="_blank"></i><span>Register</span></a>
+      <a href="../ui/buttonshtml/info.html" target="_blank"><i class="fas fa-info-circle"></i><span>About</span></a>
+      <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+    </div>
+   </div>
+      <div class="container reveal">
+
+    <div class="content">
+    </div>
+    <div class="editor" id="editor"></div>
+    <div class="button-container">
+      <button class="btn"  onclick="executeCode()" >Run ►</button>
+      <button type="button" id ="spinwh" class="fk" name="button">Get Link</button>
+    </div>
+    <div class="output"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script src="js/lib/ace.js"></script>
+    <script src="js/lib/theme-cobalt.js"></script>
+    <script src="js/ide.js"></script>
+  </div>
+</body>
+</html>
+
+
+    
+    
+  
+
+      

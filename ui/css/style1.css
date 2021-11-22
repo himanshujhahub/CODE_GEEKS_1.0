@@ -1,0 +1,266 @@
+*{
+  margin: 0;
+}
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-image: url("../background.jpg");
+    /* background-color:#19B3D3 ;
+    background-blend-mode: lighten; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: -10;
+  }
+  
+  header{
+    margin-top: 0;
+    position: fixed;
+    background: #22242A;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+  }
+  
+  .left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+  }
+  
+  .left_area span{
+    color: #19B3D3;
+  }
+  .right_area{
+    padding: 5px;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 100px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #19B3D3;
+    transition: 0.5s;
+    transition-property: background;
+    display: flex;
+  
+  }
+  .languages{
+    padding: 5px;
+    background: #19B3D3;
+    text-decoration: none;
+    float: right;
+    margin-top:0%;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+    display: flex;
+  }
+  
+  
+  
+  .sidebar {
+    background: #2f323a;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+  }
+  
+  .sidebar .profile_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar h4{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+    position: relative;
+    z-index: -1;
+  }
+  
+  .sidebar a:hover{
+    background: #19B3D3;
+  }
+  
+  .sidebar i{
+    padding-right: 10px;
+  }
+  
+  label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+  }
+  
+  label #sidebar_btn:hover{
+    color: #19B3D3;
+  }
+  
+  #check:checked ~ .sidebar{
+    left: -190px;
+  }
+  
+  #check:checked ~ .sidebar a span{
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+  }
+  
+  .content{
+    margin-left: 250px;
+    margin-top: 0;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+  }
+  
+  #check:checked ~ .content{
+    margin-left: 60px;
+  }
+  
+  #check{
+    display: none;
+  }
+  
+  .control-panel {
+    background: lightgray;
+    text-align: right;
+    padding: 4px;
+    font-family: sans-serif;
+  }
+  
+  
+  
+  #editor { height: 400px; 
+  color:#fff;}
+  
+  .button-container {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    text-align: right;
+    padding: 4px;
+    margin: top 0;
+  }
+  
+  .btn {
+    background: #19B3D3;
+    color: white;
+    padding: 8px;
+    border: 0;
+  }
+  .fk{
+    background: #19B3D3;
+    color: white;
+    padding: 8px;
+    border: 0;
+    transition: all ease 0.5s;
+  
+  }
+  
+  .fk1{
+    background: #ff2d2d;
+    color: white;
+    padding: 4px;
+    
+    border: 0;
+    margin-right: 1000px;
+  
+  }
+  .btn:hover{
+    background: #E02401;
+    color: white;
+  
+  }
+  .fk:hover{
+    background: #E02401;
+    color: white;}
+
+
+.output{
+  
+    position: relative;
+    z-index: 2;
+    padding: 4px;
+    border: 2px solid #151e3a ;
+    min-height: 100px;
+    width: 99%;
+    background-color: #151e3a;
+    color:#fff;
+}
+  
+  /* .bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 1;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+  
+  } */
+  
+  
+  
+  
+  /* .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+  }
+  
+  .reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+  } */
+      

@@ -1,0 +1,66 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+div li{
+    list-style-type: none;
+    display: block;
+}
+
+.coursetype :hover{
+    color: black;
+}
+
+.identifier{
+    width: 25%;
+}
+
+.courseName{
+    padding:10px;
+    background-color:rgb(230, 225, 225);
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.identifier_Container{
+    display: flex;
+    gap:5em;
+    width:100%;
+}
+
+.CourseImg{
+    width:500px;
+    height:250px;
+    
+}
+
+.Paybutton{
+    background-color: red;
+    color:white;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:25px;
+    border:none;
+}
+
+.Paybutton2{
+    background-color: green;
+    color:white;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:25px;
+    border:none;
+}
+
+form input{
+    border : 2px solid gray ;
+    border-radius: 5px;
+}
+
+form select {
+    border : 2px solid gray;
+    border-radius : 5px;
+}

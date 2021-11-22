@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+.control-panel {
+    background: lightgray;
+    text-align: right;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+
+
+#editor { 
+    margin-top: 100px;
+    height: 400px; }
+
+.button-container {
+    text-align: right;
+    padding: 4px;
+    margin: top 0;
+}
+
+

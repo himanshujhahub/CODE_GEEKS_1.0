@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div style="background-color:yellow"></div>
+        
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-2 lg:p-0 z-20"
+        id="nav-content">
+        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              
+              <span class="ml-3 text-xl">CODE <span style="color:#19B3D3">GEEKS</span></span>
+            </a>
+          </div>
+        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+          <li class="mr-3">
+            <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="../home.html">HOME</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              href="../buttonshtml/group_pro2.html" target="_blank">COURSES</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              href="../ide.html">PRACTICE</a>
+          </li>
+        </ul>
+        <!-- Button trigger modal -->
+            <button id ="btn" type="button" class="btn btn-primary" data-bs-toggle="modal" onclick="modelItem()" data-bs-target="#exampleModal">
+                <span style="white"><span id="itm">0</span>items in Cart</span>
+            </button>
+  
+        
+      </div>
+    </div>
+    <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+        <div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form style="display: flex ;flex-direction:column;gap:2em;">
+                          <div>
+                              <div class="accordion" id="accordionExample">
+                                <h2>Selected items</h2>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        DSA Course
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body" style="display: flex;justify-content: space-between;align-items: center;">
+                                        <div><strong>by Udemy</strong></div>
+                                        <div>Price :<span style="color: red;">₹</span ><input type="text" value="5000" disabled/></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                
+                              </div>
+                          </div>
+                          <div>Account Number : <input type="number" size="12" placeholder="xxxx xxxx xxxx 0000"/></div>
+                          <div>CVV Number     : <input type="number" size="3" placeholder="xxx" /></div>
+                          <div>AccoutHolder Name : <input type="text"  placeholder="Name"/></div>
+                          <div>Payment Mode : <select>
+                                              <option>ONLINE/NETBANKING</option>
+                                              <option>RUPAY/GOOGLEPAY</option>
+                                              <option>CARD PAYMENT</option>
+                          </select></div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Ready to Pay</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="display: flex;height: 100%;">
+        <div style="width:25%;">
+            <!-- Accordion is added here -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Udemy
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>DSA</strong><br />
+                      <strong>C++</strong><br />
+                      <strong>C</strong><br />
+                      <strong>Python</strong>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Coursera
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>DSA</strong><br />
+                        <strong>C++</strong><br />
+                        <strong>C</strong><br />
+                        <strong>Python</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Programiz
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>DSA</strong><br />
+                        <strong>C++</strong><br />
+                        <strong>C</strong><br />
+                        <strong>Python</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div id="main" style="font-size: 1.5em;">
+            <div class="identifier_Container" >
+                <div class="identifier" ><a class="coursetype" style="text-decoration: none;color:gray;" onclick="underLine(this)" href="#dsa">DSA</a></div>
+                <div class="identifier" ><a class="coursetype" style="text-decoration: none;color:gray;" onclick="underLine(this)" href="#c++">C++</a></div>
+                <div class="identifier" ><a class="coursetype" style="text-decoration: none;color:gray;" onclick="underLine(this)" href="#c">C</a></div>
+                <div class="identifier" ><a class="coursetype" style="text-decoration: none;color:gray;" onclick="underLine(this)" href="#pyth">Python</a></div>
+
+            </div>
+            <hr style="color:gray;height:5px;width:100%;"/>
+        
+            <div id="courseContainer">
+                <div id="dsa" class="courseName" >
+                    <h1 style="color:rgb(22, 22, 108);background: white;text-align:center">DSA COURSE</h1>
+                    <div style="display: flex;gap:5px;">
+                        <div class="CourseImg" >
+                            <img src="https://img-c.udemycdn.com/course/480x270/325552_4d62_14.jpg" alt="course_img" style="width:100%;height:100%;"/>
+                        </div>
+                        <div>
+                            DSA<br/>
+                            <span style="font-size: 20px;">by <span style="color:purple">Udemy</span></span><br/> <br/>
+                            <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                            <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                            <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                                <button class="Paybutton"   onclick="updateItm()">₹5000</button>
+                                <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div style="display: flex;gap:5px;">
+                        <div class="CourseImg" >
+                            <img src="https://img-c.udemycdn.com/course/480x270/2121018_9de5_5.jpg" alt="course_img" style="width:100%;height:100%;"/>
+                        </div>
+                        <div>
+                            DSA<br/>
+                            <span style="font-size: 20px;">by <span style="color:blue">Programiz</span></span><br/> <br/>
+                            <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                            <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                            <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                                <button  class="Paybutton"  onclick="updateItm()">₹5000</button>
+                                <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+    
+                    <div style="display: flex;gap:5px;">
+                        <div class="CourseImg" >
+                            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/2a/34a150d9ad11e5bd22cb7d7d7686df/logo3.png?auto=format%2Ccompress&dpr=2&w=150&h=150&fit=fill&bg=FFF&q=25" alt="course_img" style="width:100%;height:100%;"/>
+                        </div>
+                        <div>
+                            DSA<br/>
+                            <span style="font-size: 20px;">by <span style="color:yellowgreen">Coursera</span></span><br/> <br/>
+                            <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                            <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                            <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                                <button class="Paybutton"   onclick="updateItm()">₹5000</button>
+                                <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+    
+                    <div style="display: flex;gap:5px;">
+                        <div  class="CourseImg" >
+                            <img src="https://img-c.udemycdn.com/course/480x270/1103724_c5ed_4.jpg" alt="course_img" style="width:100%;height:100%;"/>
+                        </div>
+                        <div>
+                            <span style="color :yellow">Special<span style="color: red">*</span> </span>DSA<br/>
+                            <span style="font-size: 20px;">by <span style="color:purple">Udemy</span></span><br/> <br/>
+                            <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                            <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                            <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                                <button class="Paybutton"   onclick="updateItm()">₹8000</button>
+                                <button class="Paybutton2"  onclick="updateItm()">₹1599/month</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+            
+            <br />
+            <div id="c++" class="courseName" >
+                <h1 style="color:rgb(22, 22, 108);background: white;text-align:center"><span style="color:rgb(135, 71, 71)">C++</span> COURSE</h1>
+                <div style="display: flex;gap:5px;">
+                    <div class="CourseImg" >
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/10/a180da2c5d49298380057c0eec1480/Computer-Science_3-3x.png?auto=format%2Ccompress&dpr=2&w=150&h=150&fit=fill&bg=FFF&q=25" alt="course_img" style="width:100%;height:100%;"/>
+                    </div>
+                    <div>
+                        C++<br/>
+                        <span style="font-size: 20px;">by <span style="color:purple">Udemy</span></span><br/> <br/>
+                        <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                        <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                        <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                            <button  class="Paybutton"  onclick="updateItm()">₹5000</button>
+                            <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div style="display: flex;gap:5px;">
+                    <div class="CourseImg" >
+                        <img src="https://img-c.udemycdn.com/course/480x270/2823615_ddab_2.jpg" alt="course_img" style="width:100%;height:100%;"/>
+                    </div>
+                    <div>
+                        C++<br/>
+                        <span style="font-size: 20px;">by <span style="color:purple"><span style="color:blue">Programiz</span></span></span><br/> <br/>
+                        <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                        <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                        <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                            <button class="Paybutton"   onclick="updateItm()">₹5000</button>
+                            <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+    
+                <div style="display: flex;gap:5px;">
+                    <div class="CourseImg" >
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/70/d28a28b3b24adc82008ce9acf33155/Specialization-Logo.png?auto=format%2Ccompress&dpr=2&w=150&h=150&fit=fill&bg=FFF&q=25" alt="course_img" style="width:100%;height:100%;"/>
+                    </div>
+                    <div>
+                        C++<br/>
+                        <span style="font-size: 20px;">by <span style="color:purple"><span style="color:yellowgreen">Coursera</span></span></span><br/> <br/>
+                        <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                        <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                        <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                            <button class="Paybutton"  onclick="updateItm()">₹5000</button>
+                            <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+    
+                <div style="display: flex;gap:5px;">
+                    <div class="CourseImg" >
+                        <img src="https://img-b.udemycdn.com/course/480x270/657932_c7e0_4.jpg?secure=wgrbkWPNeP8_0XQGlvmpXg%3D%3D%2C1637046331" alt="course_img" style="width:100%;height:100%;"/>
+                    </div>
+                    <div>
+                        C++ Developer Course<br/>
+                        <span style="font-size: 20px;">by <span style="color:purple">Udemy</span></span><br/> <br/>
+                        <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                        <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                        <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                            <button class="Paybutton"   onclick="updateItm()">₹5000</button>
+                            <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <div id="c" class="courseName" >
+                <h1 style="color:rgb(22, 22, 108);background: white;text-align:center"><span style="color:blue">C</span> COURSE</h1>
+                <div style="display: flex;gap:5px;">
+                    <div class="CourseImg" >
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/fe/163a0249a146fdab429b3908e28422/C4E-logo-spec.png?auto=format%2Ccompress&dpr=2&w=150&h=150&fit=fill&bg=FFF&q=25" style="width:100%;height:100%;"/>
+                    </div>
+                    <div>
+                        Basic C Course<br/>
+                        <span style="font-size: 20px;">by <span style="color:purple">Udemy</span></span><br/> <br/>
+                        <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                        <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                        <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                            <button class="Paybutton"  onclick="updateItm()">₹5000</button>
+                            <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div style="display: flex;gap:5px;">
+                    <div class="CourseImg" >
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/da/bb19ee6bd54bc7926f981bac230c21/CThumbnail_PartA-01.jpg?auto=format%2Ccompress&dpr=2&w=150&h=150&fit=fill&bg=FFF&q=25" alt="course_img" style="width:100%;height:100%;"/>
+                    </div>
+                    <div>
+                        Do C<br/>
+                        <span style="font-size: 20px;">by <span style="color:blue">Programiz</span></span><br/> <br/>
+                        <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                        <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                        <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                            <button class="Paybutton"  onclick="updateItm()">₹5000</button>
+                            <button  class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+    
+                <div style="display: flex;gap:5px;">
+                    <div class="CourseImg" >
+                        <img src="https://img-c.udemycdn.com/course/480x270/2121018_9de5_5.jpg" alt="course_img" style="width:100%;height:100%;"/>
+                    </div>
+                    <div>
+                        C<br/>
+                        <span style="font-size: 20px;">by <span style="color:yellowgreen">Coursera</span></span><br/> <br/>
+                        <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                        <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                        <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                            <button class="Paybutton"  onclick="updateItm()">₹5000</button>
+                            <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+    
+                <div style="display: flex;gap:5px;">
+                    <div class="CourseImg" >
+                        <img src="https://img-c.udemycdn.com/course/480x270/2800976_98e5.jpg" alt="course_img" style="width:100%;height:100%;"/>
+                    </div>
+                    <div>
+                        All About C<br/>
+                        <span style="font-size: 20px;">by <span style="color:purple">Udemy</span></span><br/> <br/>
+                        <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                        <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                        <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                            <button class="Paybutton"  onclick="updateItm()">₹5000</button>
+                            <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <div id="pyth" class="courseName" >
+                <h1 style="color:rgb(22, 22, 108);background: white;text-align:center"><span style="color:brown">Python</span> COURSE</h1>
+                <div style="display: flex;gap:5px;">
+                    <div  class="CourseImg" >
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/be/0ce870e9cb11e8b2d233b4be6a9cf3/pythonfluency_1x1_4.png?auto=format%2Ccompress&dpr=2&w=150&h=150&fit=fill&bg=FFF&q=25" alt="course_img" style="width:100%;height:100%;"/>
+                    </div>
+                    <div>
+                        Python3Programming<br/>
+                        <span style="font-size: 20px;">by <span style="color:purple">Udemy</span></span><br/> <br/>
+                        <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                        <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                        <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                            <button class="Paybutton"   onclick="updateItm()">₹5000</button>
+                            <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div style="display: flex;gap:5px;">
+                    <div class="CourseImg" >
+                        <img src="https://img-c.udemycdn.com/course/480x270/567828_67d0.jpg" alt="course_img" style="width:100%;height:100%;"/>
+                    </div>
+                    <div>
+                        Do Python Programming <br/>
+                        <span style="font-size: 20px;">by <span style="color:blue">Programiz</span></span><br/> <br/>
+                        <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                        <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                        <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                            <button class="Paybutton"  onclick="updateItm()" >₹5000</button>
+                            <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+    
+                <div style="display: flex;gap:5px;">
+                    <div class="CourseImg" >
+                        <img src="https://img-c.udemycdn.com/course/480x270/692188_9da7_26.jpg" alt="course_img" style="width:100%;height:100%;"/>
+                    </div>
+                    <div>
+                        The Python Mega Course 2022<br/>
+                        <span style="font-size: 20px;">by <span style="color:yellowgreen">Coursera</span></span><br/> <br/>
+                        <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                        <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                        <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                            <button class="Paybutton"   onclick="updateItm()">₹5000</button>
+                            <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+    
+                <div style="display: flex;gap:5px;">
+                    <div class="CourseImg" >
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/23/57a8bab4db4777aa352a842bbf765d/How-to-set-up-shop-on-Facebook-Shops-using-Canva-84-.png?auto=format%2Ccompress&dpr=2&w=150&h=150&fit=fill&bg=FFF&q=25" alt="course_img" style="width:100%;height:100%;"/>
+                    </div>
+                    <div>
+                        REST API With Python<br/>
+                        <span style="font-size: 20px;">by <span style="color:purple">Udemy</span></span><br/> <br/>
+                        <p style="font-size: 20px;color: gray;">Learn with world class faculty and get ready for the placements.</p>
+                        <p style="font-size: 20px;color : blue;">Certificates will be provided to you to show your achievements.</p>
+                        <div style="display: flex;justify-content: space-between;padding-top:50px;">
+                            <button class="Paybutton"  onclick="updateItm()">₹5000</button>
+                            <button class="Paybutton2"  onclick="updateItm()">₹799/month</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+            </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              
+              <span class="ml-3 text-xl">CODE <span style="color:#19B3D3">GEEKS</span></span>
+            </a>
+            <p class="mt-2 text-sm text-gray-500">Fun Learn Coding Platform</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">WEB DEV</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">W3SCHOOL</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">GEEKFORGEEK</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">COURSERA</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">UDEMY</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">PROGRAMMING</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">COURSERA</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">UDEMY</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">PROGRAMMIZ</a>
+                </li>
+                
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">DATABASE MANAGEMENT</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">MYsql</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">oracleDB</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">MONGODB</a>
+                </li>
+
+              </nav>
+            </div>
+            
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 CodeGeeks —
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
